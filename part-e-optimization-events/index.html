@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>QuickCart - Optimization & DOM Events</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <h1>QuickCart - Part E</h1>
+  <p class="sub">Debounce, throttle, memoization, bubbling and delegation</p>
+
+  <!-- Task 1: Debouncing -->
+  <section>
+    <h2>Task 1 - Debounced search (500 ms)</h2>
+    <input type="text" id="searchInput" placeholder="Type to search products..." />
+    <p>Keystrokes: <strong id="keyCount">0</strong> | Searches actually run: <strong id="searchCount">0</strong></p>
+    <p id="searchResult" class="output">Start typing...</p>
+  </section>
+
+  <!-- Task 2: Throttling -->
+  <section>
+    <h2>Task 2 - Throttled scroll (1000 ms)</h2>
+    <div id="scrollBox">
+      <div class="scroll-content">Scroll inside this box (keep scrolling quickly)...</div>
+    </div>
+    <p>Scroll events: <strong id="scrollEvents">0</strong> | Handler ran: <strong id="scrollRuns">0</strong></p>
+  </section>
+
+  <!-- Task 3: Memoization -->
+  <section>
+    <h2>Task 3 - Memoized discount</h2>
+    <input type="number" id="priceInput" value="1000" />
+    <input type="number" id="percentInput" value="10" />
+    <button id="discountBtn">Calculate Discount</button>
+    <p id="discountResult" class="output">Click the button (try the same values twice).</p>
+    <ul id="discountLog"></ul>
+  </section>
+
+  <!-- Task 4a: Bubbling -->
+  <section>
+    <h2>Task 4a - Event bubbling</h2>
+    <label>
+      <input type="checkbox" id="stopCheck" /> Use event.stopPropagation() on the button
+    </label>
+    <div id="bubbleParent" class="bubble-parent">
+      Parent div
+      <button id="bubbleButton">Click me (child button)</button>
+    </div>
+    <ul id="bubbleLog"></ul>
+  </section>
+
+  <!-- Task 4b: Delegation -->
+  <section>
+    <h2>Task 4b - Event delegation (Remove buttons)</h2>
+    <ul id="productList">
+      <li data-id="1"><span>Laptop - ₹50000</span> <button class="remove-btn">Remove</button></li>
+      <li data-id="2"><span>Mouse - ₹800</span> <button class="remove-btn">Remove</button></li>
+      <li data-id="3"><span>Keyboard - ₹1500</span> <button class="remove-btn">Remove</button></li>
+    </ul>
+    <button id="addProductBtn">Add new product (dynamic element)</button>
+    <p id="deleteMsg" class="output"></p>
+  </section>
+
+  <script src="script.js"></script>
+</body>
+</html>
