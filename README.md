@@ -70,15 +70,3 @@ Order summary for customer Rahul using a `Product` class, destructuring, `map`,
 `filter`, `reduce`, `Set`, `Map`, `Object.freeze`, `JSON.stringify`, `async/await`
 with `try/catch` and a template literal. Values are calculated, not hardcoded.
 
-## Screenshots (DOM features – Part E)
-> Add your own screenshots in a `screenshots/` folder and link them here, e.g.
-
-- `![Debounce search](screenshots/debounce.png)`
-- `![Throttle scroll](screenshots/throttle.png)`
-- `![Memoization](screenshots/memoization.png)`
-- `![Bubbling and delegation](screenshots/events.png)`
-
-## Submission Links
-- GitHub Repository: *(paste your public repo URL)*
-- Loom Video: *(paste your Loom link)*
-- Live Link: N.A
